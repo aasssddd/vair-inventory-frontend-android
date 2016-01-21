@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/register_new_inventory_menu" />
+
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/scan_inventory_menu" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/gallery_menu" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/tools_menu" />
+    </group>
+
+    <item android:title="@string/feedback_menu_group">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/sym_action_email"
+                android:title="@string/feedback_email_menu" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        production {
+            keyAlias 'app_key_prod'
+            keyPassword 'P@ssw0rd'
+            storeFile file('C:/Users/william.chen/android_keystore/android.jks')
+            storePassword 'P@ssw0rd'
+        }
+        debug {
+            keyAlias 'app_key'
+            keyPassword 'P@ssw0rd'
+            storeFile file('C:/Users/william.chen/android_keystore/android.jks')
+            storePassword 'P@ssw0rd'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.vair.frontend.android.vair_inventory_mgr_frontend"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.production
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.1.0@aar'
+    compile 'com.google.zxing:core:3.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:cardview-v7:23.0+'
+    compile 'com.android.support:recyclerview-v7:23.0+'
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+}

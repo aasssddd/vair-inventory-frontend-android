@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vair_Inventory_Mgr_Frontend</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="register_new_inventory_menu">新設備</string>
+    <string name="scan_inventory_menu">掃描設備</string>
+    <string name="gallery_menu">設備清單</string>
+    <string name="login_menu">登入</string>
+    <string name="feedback_menu_group">問題回報</string>
+    <string name="feedback_email_menu">電子郵件</string>
+    <string name="tools_menu">工具箱</string>
+    <string name="login_fragment_home">This is login page</string>
+    <string name="inventory_gallery_home">This is inventory Gallery</string>
+    <string name="scan_inventory_home">This is Scan Inventory Home</string>
+    <string name="toolbox_home">This is toolbox home</string>
+
+</resources>
